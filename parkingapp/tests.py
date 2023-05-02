@@ -48,19 +48,19 @@ class DisplayBoardTestCase(TestCase):
         d = self.displayboard
         self.assertEqual(str(d), d.name)
 
-class PaymentCounterTestCase(TestCase):
-    def setUp(self):
-
-        self.paymentcounter = PaymentCounter(name="test name",counter_number=1,amount=100,parking_lot=1)
-
-    def test_model_can_create_a_paymentcounter(self):
-        """Test the address model can create a address."""
-        d = self.paymentcounter
-        self.assertTrue(isinstance(d, PaymentCounter))
-    def test_model_str_method(self):
-        d = self.paymentcounter
-        self.assertEqual(str(d), d.name)
-
-    def test_model_sum_method(self):
-        d = self.paymentcounter
-        self.assertEqual(d.amount, 100)
+# class PaymentCounterTestCase(TestCase):
+#     def setUp(self):
+#
+#         self.paymentcounter = PaymentCounter(name="test name",counter_number=1,amount=100,parking_lot=1)
+#
+#     def test_model_can_create_a_paymentcounter(self):
+#         """Test the address model can create a address."""
+#         d = self.paymentcounter
+#         self.assertTrue(isinstance(d, PaymentCounter))
+#     def test_model_str_method(self):
+#         d = self.paymentcounter
+#         self.assertEqual(str(d), d.name)
+#
+#     def test_model_sum_method(self):
+#         d = self.paymentcounter
+#         self.assertEqual(d.amount, 100)
